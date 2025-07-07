@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!-- is web-side ko "responsive" banaya he. -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./assets/music_logo.jpg" />
+    <!-- "web-side" ke title ke baju me icon dikha ne ke liye "rel" se dikha sakte ho. -->
+    <title>spotify - web player : music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Aboreto&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <!-- "web-side" ko 3 bhag me devaid kiya he #1-"sidebar" #2-"main-content" #3-"music-player"  -->
+      <div class="sidebar">
+        <!-- "sidebar" ko 2 bhag me devaid kiya he #1-"nav" #2-"library"  -->
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assets/library_icon.png" />
+              <a href="#">your library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">create your first playlist</p>
+              <p class="box-p2">It's easy,we'll help you</p>
+              <button class="badge">create playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Let's find some podcast to follow</p>
+              <p class="box-p2">we'll keep yor updated on new episodes</p>
+              <button class="badge">Browse podcast</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <!-- "main-content" ko 2 bhag me devaid kiya he #1-"sticky-nav" #2-"card"  -->
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <img src="./assets/backward_icon.png" />
+            <img src="./assets/forward_icon.png" class="hide" />
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 5px"></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <h2>Recently played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card2img.jpeg" class="card-img" />
+            <p class="card-title">Mahiye Jinna Sohna</p>
+            <p class="card-info">By : Darshan Raval,Trosk</p>
+          </div>
+          <div class="card">
+            <img src="./assets/card3img.jpeg" class="card-img" />
+            <p class="card-title">Mere Paas Tum Ho</p>
+            <p class="card-info">
+              This is Rahat Fateh Ali Khan. The essential tracks, all in one
+              playlist.
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/card4img.jpeg" class="card-img" />
+            <p class="card-title">Ney Ready[From "Leo (Telugu)"]</p>
+            <p class="card-info">
+              Anirudh Ravichander,Thala pathy Vijay,Asal Kolaar
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assets/argit sing" class="card-img" />
+            <p class="card-title">Bhagavad gita</p>
+            <p class="card-info">Bollywood crooner's essential songs.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/Diljit Dosanjh.jpeg" class="card-img" />
+            <p class="card-title">Diljit Dosanjh</p>
+            <p class="card-info">Listen to top hits of Diljit Dosanjh</p>
+          </div>
+        </div>
+
+        <h2>Featured charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assets/card5img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - Global</p>
+            <p class="card-info">The Most Popular Song in Global</p>
+          </div>
+          <div class="card">
+            <img src="./assets/card6img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info">The Most Popular Song in India</p>
+          </div>
+          <div class="card">
+            <img src="./assets/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">Your daily updates of the most played...</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <!--- "music-player" ko 3 bhag me devaid kiya he  #1-"album" #2-"player" #3-"controls" -->
+        <div class="album">
+          <img src="./assets/album_picture.jpeg" class="cur-song" />
+          <div class="p">
+            <p class="song-name">Daylight</p>
+            <p class="info-song">David Kushner</p>
+          </div>
+          <img src="./assets/album_icon1.png" class="album-2rditem a1" />
+          <img src="./assets/album_icon2.png" class="album-3rditem a2" />
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img src="./assets/player_icon1.png" class="player-control-icon" />
+            <img src="./assets/player_icon2.png" class="player-control-icon" />
+            <img
+              src="./assets/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="./assets/player_icon4.png" class="player-control-icon" />
+            <img src="./assets/player_icon5.png" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time">00:00</span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              class="progress-bar"
+              step="1"
+            />
+            <span class="tot-time">3:33</span>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="controls-icons">
+            <img src="./assets/controls_icon1.png" class="iner1 iner" />
+            <img src="./assets/controld_icon2.png" class="iner2 iner" />
+            <img src="./assets/controls_icon3.png" class="iner3 iner" />
+            <img src="./assets/controls_icon4.png" class="iner4 iner" />
+            <img src="./assets/controls_icon5.png" class="iner5 iner" />
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              class="control-input"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
